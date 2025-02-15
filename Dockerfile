@@ -1,4 +1,4 @@
-FROM node:lts-alpine3.21 as base
+FROM node:lts-alpine3.21 AS base
 
 RUN mkdir /SotN-Randomizer
 WORKDIR /SotN-Randomizer
