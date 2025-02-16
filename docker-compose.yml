@@ -1,7 +1,15 @@
 services:
-  test-service:
-    container_name: sotn-io-docker
-    image: test:v0.1
+  #  service:
+  #    container_name: sotn-io-docker
+  #    image: test:v0.1
+  #    build: .
+  #    ports:
+  #      - "30080:8080"
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+    container_name: nginx
+    image: nginx:v0.1
     ports:
-      - "30000:8080"
-
+      - "30000:80"
