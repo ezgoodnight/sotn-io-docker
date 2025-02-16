@@ -6,7 +6,7 @@ A simple Nginx server is all that is needed to operate the app; Node is not need
 
 It is mapped to localhost:30000 currently.
 
-For the moment, it requires the SOTN.io repo to be cloned into the app. This will be fixed in later versions when we correct what's wrong with the submodule.
+It's currently set up to use the randomizer app as a submodule. You may have to run the recursive submodule commands to clone all the requirements for the container, we will find out in further testing.
 
 Commands:
 
