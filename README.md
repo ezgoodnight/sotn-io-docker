@@ -11,4 +11,5 @@ For the moment, it requires the SOTN.io repo to be cloned into the app. This wil
 Commands:
 
 `docker compose build`
-`docker compose up -d`1
+
+`docker compose up -d`
