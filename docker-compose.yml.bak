@@ -1,8 +1,0 @@
-services:
-  test-service:
-    container_name: sotn-io-docker
-    image: test:v0.1
-    ports:
-      - "30000:8080"
-        #    network_mode: "host"
-
