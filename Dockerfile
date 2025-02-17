@@ -1,5 +1,12 @@
-# Dockerfile.nginx
-FROM nginx:alpine
-COPY /SotN-Randomizer /usr/share/nginx/html
-COPY ./nginx.conf /etc/nginx/nginx.conf
-#CMD ["nginx", "-g", "daemon off;"]
+FROM node:lts-alpine3.21 AS base
+
+RUN mkdir /SotN-Randomizer
+WORKDIR /SotN-Randomizer
+COPY /SotN-Randomizer/ /SotN-Randomizer
+COPY server.js /SotN-Randomizer
+
+RUN npm install connect serve-static
+RUN npm install
+
+EXPOSE 8080
+ENTRYPOINT ["node", "server.js"]

@@ -1,9 +1,9 @@
 services:
-  sotn_nginx:
+  sotn:
+    container_name: sotn-io-docker
     build:
       context: .
-      dockerfile: Dockerfile
-    container_name: sotn_nginx
-    image: sotn_nginx:v0.2
+      dockerfile: Dockerfile.nodeonly
+    image: sotn_node:v0.1
     ports:
-      - "30000:80"
+      - "30000:8080"
