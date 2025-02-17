@@ -6,6 +6,10 @@ It is mapped to localhost:30000 currently.
 
 This uses the SotN-Randomizer as a submodule.
 
+To clone it locally with the required submodules, instead of `git clone` use:
+
+`git clone --recurse-submodules`
+
 ## Dev Notes
 
 Commands:
