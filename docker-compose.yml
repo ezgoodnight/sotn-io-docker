@@ -3,7 +3,7 @@ services:
     container_name: sotn-io-docker
     build:
       context: .
-      dockerfile: Dockerfile.nodeonly
+      dockerfile: Dockerfile
     image: sotn_node:v0.1
     ports:
       - "30000:8080"
